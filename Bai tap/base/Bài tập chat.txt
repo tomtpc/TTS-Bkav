@@ -1,0 +1,17 @@
+Bài tập tổng kết:
+Viết chương trình chat nhiều máy với nhau, yêu cầu như sau:
+1. Client: Có các chức năng sau
+- Chức năng login.
+- Chức năng list ra được danh sách người đang online trên hệ thống.
+- Chat với 1 client nào đó bất kỳ theo cú pháp. Ví dụ: "Chat taimv 'hi, em hoi ti'" trong đó "Chat" là lệnh, "taimv" là account cần chat, "hi,....." là text chat.
+- Nhận chat từ client khác và hiển thị ra màn hình. Ví dụ với text trên thì client tương ứng với account "taimv" sẽ hiển thị ra text theo dạng: "nghiandd: hi, em hoi ti"
+
+2. Server: Có chức năng sau:
+- Lắng nghe ở cổng 1234
+- Mỗi client kết nối tới đưa ra 1 thread riêng để đáp ứng (multi thread)
+- Kiểm tra thông tin đăng nhập của client có hợp lệ không (username, pass), thông tin account của hệ thống lưu vào 1 file
+- Đáp ứng chức năng client yêu cầu:
++ List ra danh sách người đang online trong hệ thống
++ Nhận thông tin yêu cầu chat của client 1 và gửi sang cho client 2 theo cú pháp mô tả ở trên
+3. Thay vì gửi chat text, gửi file 
+4. Thiết kế database lưu lại lịch sử chat 
